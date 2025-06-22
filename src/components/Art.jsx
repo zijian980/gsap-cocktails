@@ -4,10 +4,10 @@ import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 
 const Art = () => {
-    const isMoobile = useMediaQuery({maxWidth: 767});
+    const isMobile = useMediaQuery({maxWidth: 767});
 
     useGSAP(()=>{
-        const start = isMoobile ? 'top 20%' : 'top top';
+        const start = isMobile ? 'top 20%' : 'top top';
 
         const maskedTimeline = gsap.timeline({
             scrollTrigger: {
